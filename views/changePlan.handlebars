@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Home Screen</title>
+  <link rel="stylesheet" type="text/css" href="css/exercise.css" />
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="exercise">
+    <h3 class="title">Select Goal</h3>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value=""
+        id="defaultCheck1" />
+      <label class="form-check-label" for="defaultCheck1">
+        Gain Muscle
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value=""
+        id="defaultCheck2" />
+      <label class="form-check-label" for="defaultCheck2">
+        Lose Weight
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value=""
+        id="defaultCheck3" />
+      <label class="form-check-label" for="defaultCheck3">
+        Maintain Current
+      </label>
+    </div>
+
+    <label class="label-select" for="validationCustom">Set Time For Your
+      Goal</label>
+    <select class="custom-select" id="validationCustom" required>
+      <option selected value="">One Month(Default)</option>
+      <option>One Weeks</option>
+      <option>Two Weeks</option>
+      <option>Three Weeks</option>
+      <option>Two Months</option>
+    </select>
+    <a href="plan" type="button" class="btn btn-warning">
+      Confirm
+    </a>
+    <a href="plan" type="button" class="btn btn-warning">Back</a>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+  crossorigin="anonymous"></script>
+
+</html>

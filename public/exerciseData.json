@@ -1,0 +1,34 @@
+{
+  "exercise": [
+    {
+      "day": "Monday",
+      "item_one": "Jogging 30mins",
+      "item_two": "Weightlifting 20sets"
+    },
+    {
+      "day": "Tuesday",
+      "item_one": "Jogging 30mins",
+      "item_two": "Weightlifting 20sets"
+    },
+    {
+      "day": "Thursday",
+      "item_one": "Jogging 30mins",
+      "item_two": "Weightlifting 20sets"
+    },
+    {
+      "day": "Friday",
+      "item_one": "Jogging 30mins",
+      "item_two": "Weightlifting 20sets"
+    },
+    {
+      "day": "Saturday",
+      "item_one": "Jogging 30mins",
+      "item_two": "Weightlifting 20sets"
+    },
+    {
+      "day": "Sunday",
+      "item_one": "Jogging 30mins",
+      "item_two": "Weightlifting 20sets"
+    }
+  ]
+}

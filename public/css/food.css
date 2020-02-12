@@ -1,0 +1,28 @@
+body {
+  /* background: rgb(29, 11, 129) !important; */
+}
+
+.information {
+  margin-bottom: 30px;
+}
+
+.food {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 200px;
+  /* color: white; */
+  width: 700px;
+  margin: 0 auto;
+}
+
+.kCal {
+  position: relative;
+  left: 130px;
+  padding-right: 30px;
+}
+
+.btn {
+  margin-top: 20px;
+  width: 250px;
+  color: white;
+}

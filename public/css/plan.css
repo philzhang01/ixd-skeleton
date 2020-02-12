@@ -1,0 +1,23 @@
+body {
+  /* background: rgb(29, 11, 129) !important; */
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 200px;
+  /* color: white; */
+  width: 700px;
+  margin: 0 auto;
+}
+
+.plan_text {
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+.btn {
+  margin-top: 30px;
+  width: 250px;
+  color: white;
+}

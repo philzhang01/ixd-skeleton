@@ -1,0 +1,46 @@
+{
+  "food": [
+    {
+      "day": "Monday",
+      "breakfast": "300kCal",
+      "lunch": "600kCal",
+      "dinner": "400kCal"
+    },
+    {
+      "day": "Tuesday",
+      "breakfast": "200kCal",
+      "lunch": "550kCal",
+      "dinner": "300kCal"
+    },
+    {
+      "day": "Wednesday",
+      "breakfast": "400kCal",
+      "lunch": "400kCal",
+      "dinner": "430kCal"
+    },
+    {
+      "day": "Thursday",
+      "breakfast": "330kCal",
+      "lunch": "750kCal",
+      "dinner": "250kCal"
+    },
+    {
+      "day": "Friday",
+      "breakfast": "280kCal",
+      "lunch": "650kCal",
+      "dinner": "300kCal"
+    },
+    {
+      "day": "Saturday",
+      "breakfast": "330kCal",
+      "lunch": "620kCal",
+      "dinner": "420kCal"
+    },
+    {
+      "day": "Sunday",
+      "breakfast": "500kCal",
+      "lunch": "300kCal",
+      "dinner": "420kCal"
+    }
+  ]
+}

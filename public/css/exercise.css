@@ -1,0 +1,30 @@
+body {
+  /* background: rgb(29, 11, 129) !important; */
+}
+
+.exercise {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 200px;
+  /* color: white; */
+  width: 700px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.form-check {
+  margin-bottom: 10px;
+}
+
+.label-select {
+  margin-top: 20px;
+}
+
+.btn {
+  margin-top: 30px;
+  width: 250px;
+  color: white;
+}
