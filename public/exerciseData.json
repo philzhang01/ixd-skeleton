@@ -8,17 +8,22 @@
     {
       "day": "Tuesday",
       "item_one": "Jogging 30mins",
-      "item_two": "Weightlifting 20sets"
+      "item_two": "Basketball 1hour"
+    },
+    {
+      "day": "Wednesday",
+      "item_one": "HIIT 20mins",
+      "item_two": "Cycling 20mins"
     },
     {
       "day": "Thursday",
-      "item_one": "Jogging 30mins",
+      "item_one": "Dancing 20mins",
       "item_two": "Weightlifting 20sets"
     },
     {
       "day": "Friday",
-      "item_one": "Jogging 30mins",
-      "item_two": "Weightlifting 20sets"
+      "item_one": "Cycling 30mins",
+      "item_two": "Basketball 1hour"
     },
     {
       "day": "Saturday",
@@ -27,8 +32,8 @@
     },
     {
       "day": "Sunday",
-      "item_one": "Jogging 30mins",
-      "item_two": "Weightlifting 20sets"
+      "item_one": "Weightlifting 30sets",
+      "item_two": "Basketball 1hour"
     }
   ]
 }

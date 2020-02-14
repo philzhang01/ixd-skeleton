@@ -25,6 +25,42 @@
     </ul>
     {{/each}}
 
+    <h4 class="information">Customize exercise plan for selected day below
+    </h4>
+    <form role="form" method="get" action="/updateexercise">
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Day</label>
+        <select class="form-control" id="exampleFormControlSelect1" name="day">
+          <option value="Monday">Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+          <option value="Saturday">Saturday</option>
+          <option value="Sunday">Sunday</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="one-value">Exercise one's name</label>
+        <input type="text" class="form-control" id="one-value"
+          placeholder="e.g. jogging/weightlifting" name="itemone_name">
+        <label for="one-time">Exercise one's number of sets/time</label>
+        <input type="text" class="form-control" id="one-time"
+          placeholder="e.g. 30mins/20sets" name="itemone_time">
+      </div>
+      <div class="form-group">
+        <label for="two-value">Exercise two's name</label>
+        <input type="text" class="form-control" id="two-value"
+          placeholder="e.g. jogging/weightlifting" name="itemtwo_name">
+        <label for="two-time">Exercise two's number of sets/time</label>
+        <input type="text" class="form-control" id="two-time"
+          placeholder="e.g. 30mins/20sets" name="itemtwo_time">
+      </div>
+      <button type="submit" id="submitBtn" class="btn btn-warning">Update
+        Exercise
+        Plan</button>
+    </form>
+
     <a href="plan" type="button" class="btn btn-warning">Back</a>
   </div>
 </body>

@@ -43,9 +43,43 @@
       </div>
     </form>
     {{/each}}
-    <div>Do you follow this plan today?</div>
+
+    <h4 class="information">Customize food calories plan for selected day below
+    </h4>
+    <form role="form" method="get" action="/updatefood">
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Day</label>
+        <select class="form-control" id="exampleFormControlSelect1" name="day">
+          <option value="Monday">Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+          <option value="Saturday">Saturday</option>
+          <option value="Sunday">Sunday</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="breakfast-value">Breakfast Calories</label>
+        <input type="text" class="form-control" id="breakfast-value"
+          placeholder="Enter Calories in kCal" name="breakfast">
+      </div>
+      <div class="form-group">
+        <label for="lunch-value">Lunch Calories</label>
+        <input type="text" class="form-control" id="lunch-value"
+          placeholder="Enter Calories in kCal" name="lunch">
+      </div>
+      <div class="form-group">
+        <label for="dinner-value">Dinner Calories</label>
+        <input type="text" class="form-control" id="dinner-value"
+          placeholder="Enter Calories in kCal" name="dinner">
+      </div>
+      <button type="submit" id="submitBtn" class="btn btn-warning">Update Food
+        Plan</button>
+    </form>
+    {{!-- <div>Do you follow this plan today?</div>
     <a href="plan" type="button" class="btn btn-warning">Yes</a>
-    <a href="plan" type="button" class="btn btn-warning">No</a>
+    <a href="plan" type="button" class="btn btn-warning">No</a> --}}
     <a href="plan" type="button" class="btn btn-warning">Back</a>
   </div>
 </body>

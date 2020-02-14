@@ -49,6 +49,8 @@ app.get("/info", info.view);
 app.get("/changePlan", changePlan.view);
 app.get("/signin", signin.view);
 
+app.get("/updatefood", food.updatefood);
+app.get("/updateexercise", exercise.updateexercise);
 app.post("/signinVerify", signin.verify);
 // Example route
 // app.get('/users', user.list);
