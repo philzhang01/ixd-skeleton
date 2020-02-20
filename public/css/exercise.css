@@ -7,8 +7,9 @@ body {
   flex-direction: column;
   padding: 60px 200px;
   /* color: white; */
-  width: 700px;
+  /* width: 700px; */
   margin: 0 auto;
+  align-items: center;
 }
 
 .title {

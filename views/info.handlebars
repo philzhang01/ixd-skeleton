@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Personal Info</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/info.css" />
   <link rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -14,41 +15,95 @@
 </head>
 
 <body>
-  <div class="home">
+  <div class="container home">
     <h3 class="information">Calculate BMR</h3>
     <form>
       <div class="form-group row">
         <label for="inputAge" class="col-sm-3 col-form-label">Age</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" id="inputAge" />
+          <input type="number" class="form-control" id="inputAge" name="age" />
         </div>
       </div>
       <div class="form-group row">
         <label for="inputGender" class="col-sm-3 col-form-label">Gender</label>
-        <div class="col-sm-6">
-          <input type="text" class="form-control" id="inputGender" />
+        <div class="col-sm-6 gender-box">
+          <label for="inputGenderMale">Male</label>
+          <input type="radio" class="form-control" id="inputGenderMale"
+            name="gender" value="male" />
+          <label for="inputGenderFemale">Female</label>
+          <input type="radio" class="form-control" id="inputGenderFemale"
+            name="gender" value="female" />
         </div>
       </div>
       <div class="form-group row">
         <label for="inputHeight" class="col-sm-3 col-form-label">Height</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" id="inputHeight" />
+          <input type="number" class="form-control" id="inputHeight"
+            name="height" placeholder="in inches" />
         </div>
       </div>
       <div class="form-group row">
         <label for="inputWeight" class="col-sm-3 col-form-label">Weight</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" id="inputWeight" />
+          <input type="number" class="form-control" id="inputWeight"
+            name="weight" placeholder="in lbs" />
         </div>
       </div>
+      <div id="BMRresult"></div>
+      <button id="calculatebtn" class="btn btn-warning"
+        value="Calculate">Calculate
+      </button>
     </form>
-    <a href="home" type="button" class="btn btn-warning">Calculate</a>
-    <a href="home" type="button" class="btn btn-warning">Clear</a>
+
+    {{!-- <a href="home" type="button" class="btn btn-warning">Clear</a>
+    <a href="home" type="button" class="btn btn-warning">Back</a> --}}
+
+    <h3 class="title">Select Goal</h3>
+    <div class="formDiv">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" value="gain"
+          id="defaultCheck1" name="goal" />
+        <label class="form-check-label" for="defaultCheck1">
+          Gain Muscle
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" value="lose"
+          id="defaultCheck2" name="goal" />
+        <label class="form-check-label" for="defaultCheck2">
+          Lose Weight
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" value="maintain"
+          id="defaultCheck3" name="goal" />
+        <label class="form-check-label" for="defaultCheck3">
+          Maintain Current
+        </label>
+      </div>
+    </div>
+
+
+    <h5>Set Time For Your Goal</h5>
+    {{!-- <label class="label-select" for="validationCustom">Set Time For Your
+      Goal</label> --}}
+    <select class="custom-select" id="validationCustom" required>
+      <option selected value="">One Month(Default)</option>
+      <option>One Weeks</option>
+      <option>Two Weeks</option>
+      <option>Three Weeks</option>
+      <option>Two Months</option>
+    </select>
+    <div id="planresult"></div>
+    <button type="button" class="btn btn-warning" id="confirmBtn">
+      Create Customized Plan
+    </button>
+
     <a href="home" type="button" class="btn btn-warning">Back</a>
   </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
   crossorigin="anonymous"></script>
+<script src="/js/calculateBMR.js"></script>
 
 </html>

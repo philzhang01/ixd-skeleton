@@ -49,6 +49,7 @@ app.get("/info", info.view);
 app.get("/changePlan", changePlan.view);
 app.get("/signin", signin.view);
 
+app.post("/confirm", info.confirm);
 app.get("/updatefood", food.updatefood);
 app.get("/updateexercise", exercise.updateexercise);
 app.post("/signinVerify", signin.verify);

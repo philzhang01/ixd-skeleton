@@ -11,11 +11,25 @@
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
-  <div class="food">
-    <h3 class="information">Food For This Week</h3>
+  <div class="container food">
+    <h3 class="information" id="ppg">Food For This Week</h3>
+
+    {{#if target}}
+    {{#if plan}}
+    <span class="goal_cal">Your daily total caloric intake for 3 meals is
+      {{target}} kcal. Your current goal is to {{plan}} weight. You may
+      customize the plan below.
+    </span>
+    {{/if}}
+    {{/if}}
+
+    {{!-- <span class="goal_cal">
+    </span> --}}
+
 
     {{#each food}}
     <h4>{{day}}</h4>
@@ -23,28 +37,26 @@
       <div class="form-group row">
         <label for="inputAge" class="col-sm-3 col-form-label">Breakfast</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" id="inputAge"
-            value="{{breakfast}}" />
+          <input type="text" class="form-control" value="{{breakfast}}" />
         </div>
       </div>
       <div class="form-group row">
         <label for="inputGender" class="col-sm-3 col-form-label">Lunch</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" id="inputGender"
-            value="{{lunch}}" />
+          <input type="text" class="form-control" value="{{lunch}}" />
         </div>
       </div>
       <div class="form-group row">
         <label for="inputHeight" class="col-sm-3 col-form-label">Dinner</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" id="inputHeight"
-            value="{{dinner}}" />
+          <input type="text" class="form-control" value="{{dinner}}" />
         </div>
       </div>
     </form>
     {{/each}}
 
-    <h4 class="information">Customize food calories plan for selected day below
+    <h4 class="information">Customize food calories plan for selected day
+      below
     </h4>
     <form role="form" method="get" action="/updatefood">
       <div class="form-group">
@@ -80,11 +92,11 @@
     {{!-- <div>Do you follow this plan today?</div>
     <a href="plan" type="button" class="btn btn-warning">Yes</a>
     <a href="plan" type="button" class="btn btn-warning">No</a> --}}
-    <a href="plan" type="button" class="btn btn-warning">Back</a>
+    <a href="home" type="button" class="btn btn-warning">Back</a>
   </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
   crossorigin="anonymous"></script>
+<script src="/js/calculateBMR.js"></script>
 
 </html>

@@ -11,12 +11,27 @@ body {
   flex-direction: column;
   padding: 60px 200px;
   /* color: white; */
-  width: 700px;
+  width: 400px;
   margin: 0 auto;
+  align-items: center;
 }
 
 .btn {
   margin-top: 20px;
   width: 250px;
   color: white;
+}
+
+.title {
+  margin-top: 30px;
+}
+
+.gender-box {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.gender-box label {
+  bottom: 10px;
 }
