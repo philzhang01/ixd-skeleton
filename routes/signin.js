@@ -8,7 +8,7 @@ exports.verify = function(req, res) {
 
   console.log(name, password);
 
-  if (name === "admin" && password === "12345") {
+  if (name === "testuser" && password === "pass123") {
     res.redirect("home");
   }
 };

@@ -32,5 +32,7 @@ exports.updateexercise = function(req, res) {
     exerciseData.exercise[5] = newPlan;
   } else if (day === "Sunday") {
     exerciseData.exercise[6] = newPlan;
+  } else {
+    exerciseData.exercise.push(newPlan);
   }
 };

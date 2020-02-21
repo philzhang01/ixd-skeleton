@@ -32,5 +32,7 @@ exports.updatefood = function(req, res) {
     foodData.food[5] = newPlan;
   } else if (day === "Sunday") {
     foodData.food[6] = newPlan;
+  } else {
+    foodData.food.push(newPlan);
   }
 };

@@ -1,12 +1,12 @@
 body {
-  /* background: rgb(29, 11, 129) !important; */
+  background: rgb(29, 11, 129) !important;
 }
 
 .home {
   display: flex;
   flex-direction: column;
   padding: 60px 200px;
-  /* color: white; */
+  color: white;
   width: 700px;
   /* margin: 0 auto; */
   align-items: center;
@@ -15,5 +15,4 @@ body {
 .btn {
   margin-top: 30px;
   width: 250px;
-  color: white;
 }

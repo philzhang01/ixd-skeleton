@@ -1,5 +1,5 @@
 body {
-  /* background: rgb(29, 11, 129) !important; */
+  background: rgb(29, 11, 129) !important;
 }
 
 .information {
@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 60px 200px;
-  /* color: white; */
+  color: rgb(255, 196, 0);
   width: 400px;
   margin: 0 auto;
   align-items: center;
