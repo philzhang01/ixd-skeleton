@@ -1,7 +1,7 @@
 let foodData = require("../public/foodData.json");
 
 exports.view = function(req, res) {
-  console.log(foodData);
+  //console.log(foodData);
   res.render("food", foodData);
 };
 
@@ -34,5 +34,37 @@ exports.updatefood = function(req, res) {
     foodData.food[6] = newPlan;
   } else {
     foodData.food.push(newPlan);
+  }
+};
+
+exports.viewAlt = function(req, res) {
+  //console.log(foodData);
+  res.render("foodAlt", foodData);
+};
+
+exports.updatefoodAlt = function(req, res) {
+  let { day, breakfast, lunch, dinner } = req.body;
+
+  let newPlan = {
+    day,
+    breakfast,
+    lunch,
+    dinner
+  };
+
+  if (day === "Monday") {
+    foodData.food[0] = newPlan;
+  } else if (day === "Tuesday") {
+    foodData.food[1] = newPlan;
+  } else if (day === "Wednesday") {
+    foodData.food[2] = newPlan;
+  } else if (day === "Thursday") {
+    foodData.food[3] = newPlan;
+  } else if (day === "Friday") {
+    foodData.food[4] = newPlan;
+  } else if (day === "Saturday") {
+    foodData.food[5] = newPlan;
+  } else if (day === "Sunday") {
+    foodData.food[6] = newPlan;
   }
 };

@@ -9,7 +9,7 @@ $(button_my_button).click(function(e) {
 
   let BMR = 0;
 
-  console.log(age, weight, height);
+  //console.log(age, weight, height);
 
   if (age !== "" && weight !== "" && height !== "") {
     if (gender === "male") {
@@ -49,4 +49,15 @@ $("#confirmBtn").click(function() {
   }
 
   $.post("/confirm", { plan, target });
+});
+
+$(".submitBtnAlt").click(function(e) {
+  e.preventDefault();
+  let day = $(this).attr("day");
+  $.post("/updatefoodAlt", {
+    day,
+    breakfast: $(`input[name=breakfast${day}]`).val(),
+    lunch: $(`input[name=lunch${day}]`).val(),
+    dinner: $(`input[name=dinner${day}]`).val()
+  });
 });

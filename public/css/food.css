@@ -27,3 +27,17 @@ body {
   width: 250px;
   color: white;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.submitBtnAlt {
+  margin: auto;
+}
+
+.form-border {
+  /* border-bottom: 3px solid rgb(255, 196, 0); */
+  margin-bottom: 30px;
+}

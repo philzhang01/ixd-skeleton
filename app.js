@@ -42,7 +42,8 @@ if ("development" == app.get("env")) {
 
 app.get("/", index.view);
 app.get("/home", home.view);
-app.get("/food", food.view);
+app.get("/food_A", food.view);
+app.get("/food_B", food.viewAlt);
 app.get("/exercise", exercise.view);
 app.get("/plan", plan.view);
 app.get("/info", info.view);
@@ -53,6 +54,7 @@ app.post("/confirm", info.confirm);
 app.get("/updatefood", food.updatefood);
 app.get("/updateexercise", exercise.updateexercise);
 app.post("/signinVerify", signin.verify);
+app.post("/updatefoodAlt", food.updatefoodAlt);
 // Example route
 // app.get('/users', user.list);
 
