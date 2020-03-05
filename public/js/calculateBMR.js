@@ -61,3 +61,17 @@ $(".submitBtnAlt").click(function(e) {
     dinner: $(`input[name=dinner${day}]`).val()
   });
 });
+
+$(document).ready(function() {
+  initializePage();
+});
+
+/*
+ * Function that is called when the document is ready.
+ */
+function initializePage() {
+  // your code here
+  $(".food-update").click(function() {
+    ga("send", "event", "update", "click");
+  });
+}
